@@ -6,16 +6,20 @@
   font-size: 16px;
 
   /*Primary color */
-  --color-primary-moderateBlue: hsl(238, 40%, 52%);
-  --color-primary-softRed: hsl(358, 79%, 66%);
-  --color-primary-grayishBlue: hsl(239, 57%, 85%);
-  --color-primary-paleRed: hsl(357, 100%, 86%);
+  --color-primary-bg: #ffffff;
 
-  --color-neutral-darkBlue: hsl(212, 24%, 26%);
-  --color-neutral-grayishBlue: hsl(211, 10%, 45%);
-  --color-neutral-lightGray: hsl(223, 19%, 93%);
-  --color-neutral-veryLightGray: hsl(228, 33%, 97%);
-  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-notification-counter: #ff5674;
+  --color-button-unselected-bg: #edf0f7;
+  --color-button-font: #545d71;
+  --color-blue-text: #1374ff;
+  --color-notification-alert: #1b79ff;
+  --color-notification-unread-bg: #f3f3f7;
+  --color-notification-unread-font: #5f677a;
+  --color-notification-date: #8891a7;
+  --color-scroll: #a0abc0;
+  --color-notification-separation: #f2f4f9;
 
-  --border-radius: 7px;
+  --modal-border-radius: 4px;
+  --primary-border-radius: 7px;
+  --button-border-radius: 10px;
 }
