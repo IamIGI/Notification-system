@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 :root {
+  --notification-button-size: 38px;
   /*General*/
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
@@ -8,16 +9,17 @@
   /*Primary color */
   --color-primary-bg: #ffffff;
 
-  --color-notification-counter: #ff5674;
+  --color-notification-counter-bg: #ff5674;
   --color-button-unselected-bg: #edf0f7;
   --color-button-font: #545d71;
   --color-blue-text: #1374ff;
   --color-notification-alert: #1b79ff;
+  --color-primary-hover-bg: #ceced2;
   --color-notification-unread-bg: #f3f3f7;
   --color-notification-unread-font: #5f677a;
   --color-notification-date: #8891a7;
   --color-scroll: #a0abc0;
-  --color-notification-separation: #f2f4f9;
+  --color-notification-separation: #c7c8ca;
 
   --modal-border-radius: 4px;
   --primary-border-radius: 7px;
