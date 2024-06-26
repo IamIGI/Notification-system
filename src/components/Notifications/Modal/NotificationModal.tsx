@@ -1,4 +1,7 @@
 import Modal from '../../Modal/Modal';
+
+import NotificationList from '../NotificationList/NotificationList';
+import NotificationSettings from '../NotificationSettings/NotificationSettings';
 import styles from './NotificationModal.module.scss';
 
 interface NotificationModalProps {
@@ -15,8 +18,14 @@ export default function NotificationModal({
   return (
     <Modal open={open} onClose={onClose}>
       <div className={styles.wrapper}>
-        <h2>Notification Modal</h2>
-        <p>This is your notification content.</p>
+        <div className={styles.title_wrapper}>
+          <h1>
+            Notifications
+            <span className={styles.indicator}>3</span>
+          </h1>
+        </div>
+        <NotificationSettings />
+        <NotificationList />
       </div>
     </Modal>
   );

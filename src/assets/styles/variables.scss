@@ -6,22 +6,28 @@
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
 
-  /*Primary color */
+  /*Primary */
   --color-primary-bg: #ffffff;
+  --color-primary-hover-bg: #ceced2;
+  --primary-border-radius: 7px;
 
-  --color-notification-counter-bg: #ff5674;
+  // Button
   --color-button-unselected-bg: #edf0f7;
   --color-button-font: #545d71;
-  --color-blue-text: #1374ff;
+  --color-button-border: #7a8290;
+  --button-height: 42px;
+  --button-border-radius: 21px;
+
+  // Notificaitons
   --color-notification-alert: #1b79ff;
-  --color-primary-hover-bg: #ceced2;
+  --color-notification-counter-bg: #ff5674;
   --color-notification-unread-bg: #f3f3f7;
   --color-notification-unread-font: #5f677a;
   --color-notification-date: #8891a7;
-  --color-scroll: #a0abc0;
   --color-notification-separation: #c7c8ca;
 
+  // Others
+  --color-scroll: #a0abc0;
   --modal-border-radius: 8px;
-  --primary-border-radius: 7px;
-  --button-border-radius: 10px;
+  --color-blue-text: #1374ff;
 }
