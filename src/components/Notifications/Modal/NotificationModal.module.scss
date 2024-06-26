@@ -26,6 +26,7 @@
 }
 
 .indicator {
+  padding-top: 4px;
   $size: 20px;
   position: absolute;
   display: flex;
@@ -35,7 +36,6 @@
   right: -22px;
   height: $size;
   width: $size;
-  padding-top: 1px;
 
   background-color: var(--color-notification-counter-bg);
   border-radius: 50%;

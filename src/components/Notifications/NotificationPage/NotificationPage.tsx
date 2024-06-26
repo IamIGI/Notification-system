@@ -1,13 +1,16 @@
 import DOMPurify from 'dompurify';
-import { notificationMock } from '../../../mocks/notification';
+
 import styles from './NotificationPage.module.scss';
+
+import { getNotificationById } from '../../../redux/notificationsSlice';
+import { useAppSelector } from '../../../hooks/hooks';
 
 interface NotificationPageProps {
   id: string;
 }
 
 export default function NotificationPage({ id }: NotificationPageProps) {
-  const data = notificationMock.find((item) => item.id === id);
+  const data = useAppSelector((state) => getNotificationById(state, id));
 
   const sanitizedText = DOMPurify.sanitize(data!.text);
 

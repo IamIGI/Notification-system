@@ -12,9 +12,14 @@ import DOMPurify from 'dompurify';
 interface NotificationItemProps {
   data: Notification;
   img: string | undefined;
+  onClick: () => void;
 }
 
-export default function NotificationItem({ data, img }: NotificationItemProps) {
+export default function NotificationItem({
+  data,
+  img,
+  onClick,
+}: NotificationItemProps) {
   const { id, type, status, text, date } = data;
 
   const sanitizedText = DOMPurify.sanitize(text);
@@ -24,7 +29,11 @@ export default function NotificationItem({ data, img }: NotificationItemProps) {
 
   //Latter add id to link `${type}/${id}`
   return (
-    <Link className={notificationClasses} to={`${type}/${id}`}>
+    <Link
+      className={notificationClasses}
+      to={`${type}/${id}`}
+      onClick={onClick}
+    >
       <div className={styles.inside_wrapper}>
         <div className={styles.icon_wrapper}>
           <img src={img} alt="notification logo" className={styles.logo} />

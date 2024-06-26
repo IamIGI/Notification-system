@@ -5,11 +5,11 @@ function getNotificationData(): Notification[] {
   return savedTodos ? (JSON.parse(savedTodos) as Notification[]) : [];
 }
 
-function updatNotificationData(todos: Notification[]) {
+function updateNotificationData(todos: Notification[]) {
   localStorage.setItem('NotificationData', JSON.stringify(todos));
 }
 
 export default {
   getNotificationData,
-  updatNotificationData,
+  updateNotificationData,
 };

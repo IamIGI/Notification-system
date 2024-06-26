@@ -1,3 +1,8 @@
+export enum NotificationFilter {
+  All = 'all',
+  Unread = 'unread',
+}
+
 export enum NotificationType {
   Request = 'request',
   OnHold = 'on_hold',
