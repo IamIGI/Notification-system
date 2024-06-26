@@ -1,0 +1,31 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.outside_wrapper {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  //   transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.inside_wrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  //   border: 1px solid grey;
+  border-radius: var(--modal-border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
