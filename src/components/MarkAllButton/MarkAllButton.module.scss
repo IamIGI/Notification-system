@@ -1,0 +1,25 @@
+.button_styles {
+  height: 42px;
+  padding: 0 10px;
+  background-color: white;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  cursor: pointer;
+
+  span {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-blue-text);
+    padding-bottom: 6px;
+  }
+}
+
+.logo {
+  color: var(--color-blue-text);
+  height: 25px;
+  margin-right: 5px;
+}

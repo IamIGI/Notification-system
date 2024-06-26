@@ -1,0 +1,23 @@
+.button_styles {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  padding: 0 10px;
+  height: var(--button-height);
+  border: 1px solid var(--color-button-border);
+  border-radius: var(--button-border-radius);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-button-font);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+.inactive {
+  background-color: var(--color-button-unselected-bg);
+  border: 1px solid var(--color-button-unselected-bg);
+}
