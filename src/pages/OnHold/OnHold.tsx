@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import './OnHold.module.scss';
+import NotificationPage from '../../components/Notifications/NotificationPage/NotificationPage';
 
 export default function OnHold() {
   const id = useParams().id as string;
 
-  return <p>{id}</p>;
+  return <NotificationPage id={id} />;
 }
