@@ -18,7 +18,7 @@ export const notificationMock: Notification[] = [
   {
     id: crypto.randomUUID(),
     type: NotificationType.NewFeature,
-    date: dateUtils.getYesterdayDate(),
+    date: dateUtils.getPreviousDate(1),
     image: NotificationImage.MindPal,
     text: 'We have lunched new product!',
     status: NotificationStatus.UnRead,
@@ -34,10 +34,10 @@ export const notificationMock: Notification[] = [
   {
     id: crypto.randomUUID(),
     type: NotificationType.OnHold,
-    date: dateUtils.getYesterdayDate(),
+    date: dateUtils.getPreviousDate(1),
     image: NotificationImage.Stop,
     text: '<strong>Gregory Jones</strong> from <strong>MindPal</strong> has put their project <strong>Project 123</strong> on hold',
-    status: NotificationStatus.Read,
+    status: NotificationStatus.UnRead,
   },
   {
     id: crypto.randomUUID(),
@@ -58,7 +58,7 @@ export const notificationMock: Notification[] = [
   {
     id: crypto.randomUUID(),
     type: NotificationType.NewFeature,
-    date: dateUtils.getYesterdayDate(),
+    date: dateUtils.getPreviousDate(1),
     image: NotificationImage.MindPal,
     text: 'New MindTool feature: AI Chat Assistant',
     status: NotificationStatus.Read,
