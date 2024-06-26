@@ -1,11 +1,3 @@
-function getYesterdayDate() {
-  const today = new Date();
-  const yesterday = new Date(today);
-  yesterday.setDate(today.getDate() - 1);
-
-  return yesterday;
-}
-
 function getPreviousDate(daysBack: number) {
   const today = new Date();
   const yesterday = new Date(today);
@@ -33,7 +25,6 @@ function formatDate(dateString: Date) {
 }
 
 export default {
-  getYesterdayDate,
   getPreviousDate,
   formatDate,
 };
