@@ -23,7 +23,7 @@ export interface Notification {
   id: string;
   type: NotificationType;
   status: NotificationStatus;
-  image: string;
+  image: NotificationImage;
   text: string;
   date: Date;
 }
