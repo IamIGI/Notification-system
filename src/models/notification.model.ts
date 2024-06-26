@@ -1,7 +1,7 @@
 export enum NotificationType {
   Request = 'request',
   OnHold = 'on_hold',
-  NewFeature = 'newFeature',
+  NewFeature = 'new_feature',
 }
 
 export enum NotificationImage {
