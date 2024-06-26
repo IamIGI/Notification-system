@@ -4,7 +4,7 @@ import styles from './MarkAllButton.module.scss';
 export default function MarkAllButton() {
   return (
     <button className={styles.button_styles}>
-      <img src={markAllIcon} alt="Company Logo" className={styles.logo} />
+      <img src={markAllIcon} alt="Marks Logo" className={styles.logo} />
       <span> Mark all as read </span>
     </button>
   );

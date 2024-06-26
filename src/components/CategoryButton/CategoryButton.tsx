@@ -16,7 +16,6 @@ export default function CategoryButton({
   type,
 }: CategoryButtonProps) {
   const buttonClasses = classNames(styles.button_styles, {
-    [styles.active]: type === ButtonType.active,
     [styles.inactive]: type === ButtonType.inactive,
   });
 
