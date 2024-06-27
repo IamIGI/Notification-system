@@ -4,6 +4,7 @@ import OnHold from './pages/OnHold/OnHold';
 import NewFeature from './pages/NewFeature/NewFeature';
 import Home from './pages/Home/Home';
 import { NotificationType } from './models/notification.model';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 export default function Root() {
   return (
@@ -15,6 +16,7 @@ export default function Root() {
         path={`/${NotificationType.NewFeature}/:id`}
         element={<NewFeature />}
       />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
