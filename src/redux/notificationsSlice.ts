@@ -2,6 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { RootState } from './store';
 import localStorageUtils from '../utils/localStorage.utils';
 import {
+  Notification,
   NotificationFilter,
   NotificationStatus,
 } from '../models/notification.model';
@@ -13,6 +14,12 @@ const notificationsSlice = createSlice({
     filter: NotificationFilter.All,
   },
   reducers: {
+    fetchNotifications: (
+      state,
+      action: PayloadAction<{ data: Notification[] }>
+    ) => {
+      state.data = action.payload.data;
+    },
     readAllNotifications: (state) => {
       state.data.forEach((notification) => {
         notification.status = NotificationStatus.Read;
@@ -41,8 +48,12 @@ const notificationsSlice = createSlice({
   },
 });
 
-export const { readAllNotifications, readNotificationById, changeFilter } =
-  notificationsSlice.actions;
+export const {
+  fetchNotifications,
+  readAllNotifications,
+  readNotificationById,
+  changeFilter,
+} = notificationsSlice.actions;
 
 export const getFilterStatus = (state: RootState) => state.notifications.filter;
 

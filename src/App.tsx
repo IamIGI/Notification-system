@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import localStorageUtils from './utils/localStorage.utils';
 import { notificationMock } from './mocks/notification';
 import { useAppDispatch } from './hooks/hooks';
-import { changeFilter } from './redux/notificationsSlice';
+import { changeFilter, fetchNotifications } from './redux/notificationsSlice';
 import { NotificationFilter } from './models/notification.model';
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
     //Init data to LS on first app run
     if (localStorageUtils.getNotificationData().length === 0) {
       localStorageUtils.updateNotificationData(notificationMock);
+      dispatch(fetchNotifications({ data: notificationMock }));
     }
   }, []);
 
