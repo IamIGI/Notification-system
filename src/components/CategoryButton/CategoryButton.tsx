@@ -23,7 +23,6 @@ export default function CategoryButton({
 
   return (
     <button onClick={onClick} className={buttonClasses}>
-      {' '}
       {children}
     </button>
   );

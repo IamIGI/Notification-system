@@ -22,16 +22,12 @@ export default function NotificationPage({ id }: NotificationPageProps) {
   const sanitizedText = DOMPurify.sanitize(data!.text);
 
   return (
-    <>
-      {data && (
-        <>
-          <h1>{data.type}</h1>
-          <div
-            className={styles.text_styles}
-            dangerouslySetInnerHTML={{ __html: sanitizedText }}
-          />
-        </>
-      )}
-    </>
+    <div className="global_wrapper">
+      <h1>{data.type}</h1>
+      <div
+        className={styles.text_styles}
+        dangerouslySetInnerHTML={{ __html: sanitizedText }}
+      ></div>
+    </div>
   );
 }
