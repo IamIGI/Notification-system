@@ -15,6 +15,10 @@ body {
   background-color: var(--color-primary-bg);
 }
 
+.global_wrapper {
+  padding: 20px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
